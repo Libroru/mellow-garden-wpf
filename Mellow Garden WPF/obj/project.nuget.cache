@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UdIEeq00pQ2pQhr9m5/umKGZFLpiGYOUG5z7C4Qcz1cQMTL+/q6hNupElkzO/+seZeGWyeoCJL3ijV6dY25Gbw==",
+  "success": true,
+  "projectFilePath": "D:\\Coding\\NET\\Mellow Garden WPF\\Mellow Garden WPF\\Mellow Garden WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexk\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

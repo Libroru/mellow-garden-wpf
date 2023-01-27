@@ -1,0 +1,121 @@
+﻿<Window x:Class="Mellow_Garden_WPF.MVVM.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mellow_Garden_WPF.MVVM.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="775" Width="425" ResizeMode="NoResize">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Border Padding="30,0"
+            Background="#000000" HorizontalAlignment="Center" Width="425">
+        <StackPanel Orientation="Vertical" Margin="0,49,0,30">
+            <!-- Tree Image Frame -->
+            <Border Background="#FFDDDDDD"
+                    Width="365"
+                    Height="325"
+                    CornerRadius="25">
+                <StackPanel>
+
+                    <TextBox Text="{ Binding TreeName }"
+                             Foreground="Black"
+                             TextAlignment="Center"
+                             FontSize="32"
+                             Background="Transparent"
+                             BorderThickness="0"/>
+
+                    <Image Width="300" Source="pack://application:,,,/Resources/Images/trees/state_1.png"/>
+                </StackPanel>
+            </Border>
+
+            <Grid Height="100"
+                  Width="365"
+                  Margin="0, 15, 0, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Style="{DynamicResource ButtonStyle1}" Command="{ Binding WaterCommand }"
+                            Content="Water"
+                            Grid.Column="0"
+                            Grid.Row="0"/>
+                <Button     Style="{DynamicResource ButtonStyle1}" 
+                            Command="{ Binding FertilizeCommand }"
+                            Content="Fertilize"
+                            Grid.Column="0"
+                            Grid.Row="1"/>
+                <Button     Style="{DynamicResource ButtonStyle1}" 
+                            Command="{ Binding HealCommand }"
+                            Content="Heal"
+                            Grid.Column="1"
+                            Grid.Row="0"/>
+                <Button     Style="{DynamicResource ButtonStyle1}" 
+                            Command="{ Binding DeleteCommand }"
+                            Content="Delete"
+                            Grid.Column="1"
+                            Grid.Row="1"/>
+            </Grid>
+
+            <Grid Height="85"
+                  Width="365"
+                  Margin="0, 0, 0, 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock  Style="{DynamicResource MeterValue}"
+                            Text="{ Binding WaterText }"
+                            Grid.Column="0"
+                            Grid.Row="0"/>
+                <TextBlock  Style="{DynamicResource MeterValue}"
+                            Text="{ Binding FertilizeText }"
+                            Grid.Column="1"
+                            Grid.Row="0"/>
+                <TextBlock  Style="{DynamicResource MeterValue}"
+                            Text="{ Binding HealthText }"
+                            Grid.Column="2"
+                            Grid.Row="0"/>
+                <TextBlock  Style="{DynamicResource MeterValue}"
+                            Text="{ Binding HappinessText }"
+                            Grid.Column="3"
+                            Grid.Row="0"/>
+                <TextBlock  Style="{DynamicResource MeterInfo}"
+                            Text="Water"
+                            Grid.Column="0"
+                            Grid.Row="1"/>
+                <TextBlock  Style="{DynamicResource MeterInfo}"
+                            Text="Fertilizer"
+                            Grid.Column="1"
+                            Grid.Row="1"/>
+                <TextBlock  Style="{DynamicResource MeterInfo}"
+                            Text="Health"
+                            Grid.Column="2"
+                            Grid.Row="1"/>
+                <TextBlock  Style="{DynamicResource MeterInfo}"
+                            Text="Happiness"
+                            Grid.Column="3"
+                            Grid.Row="1"/>
+            </Grid>
+
+            <ProgressBar Style="{DynamicResource ProgressBarStyle1}" Width="365"
+                         Height="10"
+                         Value="{ Binding ExperienceBarValue }"
+                         Background="#FFDDDDDD"/>
+            <TextBlock Text ="{ Binding timerString }"
+                       HorizontalAlignment="Center"
+                       FontSize="32"/>
+        </StackPanel>
+    </Border>
+</Window>

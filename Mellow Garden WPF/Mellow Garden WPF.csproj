@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Mellow_Garden_WPF</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\trees\state_1.png" />
+    <None Remove="Resources\Images\trees\state_2.png" />
+    <None Remove="Resources\Images\trees\state_3.png" />
+    <None Remove="Resources\Images\trees\state_4.png" />
+    <None Remove="Resources\Images\trees\state_5.png" />
+    <None Remove="Resources\Images\trees\state_91.png" />
+    <None Remove="Resources\Images\trees\state_92.png" />
+    <None Remove="Resources\Images\trees\state_93.png" />
+    <None Remove="Resources\Images\trees\state_94.png" />
+    <None Remove="Resources\Images\trees\state_95.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\trees\state_1.png" />
+    <Resource Include="Resources\Images\trees\state_2.png" />
+    <Resource Include="Resources\Images\trees\state_3.png" />
+    <Resource Include="Resources\Images\trees\state_4.png" />
+    <Resource Include="Resources\Images\trees\state_5.png" />
+    <Resource Include="Resources\Images\trees\state_91.png" />
+    <Resource Include="Resources\Images\trees\state_92.png" />
+    <Resource Include="Resources\Images\trees\state_93.png" />
+    <Resource Include="Resources\Images\trees\state_94.png" />
+    <Resource Include="Resources\Images\trees\state_95.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+</Project>
