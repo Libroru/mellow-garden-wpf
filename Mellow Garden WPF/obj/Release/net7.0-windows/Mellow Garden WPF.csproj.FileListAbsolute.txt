@@ -1,0 +1,24 @@
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.exe
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.deps.json
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.runtimeconfig.json
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.dll
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.pdb
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\CommunityToolkit.Mvvm.dll
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.csproj.AssemblyReference.cache
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\MVVM\View\MainWindow.g.cs
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\App.g.cs
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF_MarkupCompile.cache
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF_MarkupCompile.lref
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\App.baml
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\MVVM\View\MainWindow.baml
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.g.resources
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.AssemblyInfoInputs.cache
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.AssemblyInfo.cs
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.csproj.CoreCompileInputs.cache
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.csproj.CopyComplete
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.dll
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\refint\Mellow Garden WPF.dll
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.pdb
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\Mellow Garden WPF.genruntimeconfig.cache
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Release\net7.0-windows\ref\Mellow Garden WPF.dll

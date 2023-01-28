@@ -61,10 +61,10 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.1.0",
     "restore": {
       "projectUniqueName": "D:\\Coding\\NET\\Mellow Garden WPF\\Mellow Garden WPF\\Mellow Garden WPF.csproj",
-      "projectName": "Mellow Garden WPF",
+      "projectName": "MellowGarden",
       "projectPath": "D:\\Coding\\NET\\Mellow Garden WPF\\Mellow Garden WPF\\Mellow Garden WPF.csproj",
       "packagesPath": "C:\\Users\\alexk\\.nuget\\packages\\",
       "outputPath": "D:\\Coding\\NET\\Mellow Garden WPF\\Mellow Garden WPF\\obj\\",

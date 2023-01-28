@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mellow_Garden_WPF.MVVM.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="775" Width="425" ResizeMode="NoResize">
+        Title="MainWindow" Height="775" Width="425" ResizeMode="NoResize"
+        Closed="Window_Closed">
     <Window.Resources>
 
     </Window.Resources>
@@ -20,13 +21,19 @@
                 <StackPanel>
 
                     <TextBox Text="{ Binding TreeName }"
-                             Foreground="Black"
-                             TextAlignment="Center"
-                             FontSize="32"
-                             Background="Transparent"
-                             BorderThickness="0"/>
+                                 Foreground="Black"
+                                 TextAlignment="Center"
+                                 FontSize="32"
+                                 Background="Transparent"
+                                 BorderThickness="0"
+                                 KeyDown="TextBox_KeyDown"
+                                 Focusable="False"
+                                 MouseEnter="TextBox_MouseEnter"
+                                 MouseLeave="TextBox_MouseLeave"
+                                 Grid.Column="0"
+                                 Grid.Row="0"/>
 
-                    <Image Width="300" Source="pack://application:,,,/Resources/Images/trees/state_1.png"/>
+                    <Image Width="300" Source="{ Binding ImageURI }"/>
                 </StackPanel>
             </Border>
 
@@ -80,7 +87,7 @@
                             Grid.Column="0"
                             Grid.Row="0"/>
                 <TextBlock  Style="{DynamicResource MeterValue}"
-                            Text="{ Binding FertilizeText }"
+                            Text="{ Binding FertilizerText }"
                             Grid.Column="1"
                             Grid.Row="0"/>
                 <TextBlock  Style="{DynamicResource MeterValue}"
@@ -113,9 +120,11 @@
                          Height="10"
                          Value="{ Binding ExperienceBarValue }"
                          Background="#FFDDDDDD"/>
-            <TextBlock Text ="{ Binding timerString }"
+            <TextBlock Text="{ Binding TimerString }"
+                       Style="{DynamicResource MeterValue}"
                        HorizontalAlignment="Center"
-                       FontSize="32"/>
+                       FontSize="32"
+                       Margin="0, 15, 0, 0"/>
         </StackPanel>
     </Border>
 </Window>

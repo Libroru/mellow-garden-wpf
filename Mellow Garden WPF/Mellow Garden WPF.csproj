@@ -6,6 +6,10 @@
     <RootNamespace>Mellow_Garden_WPF</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <PackageId>MellowGarden</PackageId>
+    <Version>0.1</Version>
+    <Authors>Libroru</Authors>
+    <Product>Mellow Garden</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +23,7 @@
     <None Remove="Resources\Images\trees\state_93.png" />
     <None Remove="Resources\Images\trees\state_94.png" />
     <None Remove="Resources\Images\trees\state_95.png" />
+    <None Remove="Resources\Sounds\chime1.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +41,7 @@
     <Resource Include="Resources\Images\trees\state_93.png" />
     <Resource Include="Resources\Images\trees\state_94.png" />
     <Resource Include="Resources\Images\trees\state_95.png" />
+    <Resource Include="Resources\Sounds\chime1.wav" />
   </ItemGroup>
 
   <ItemGroup>

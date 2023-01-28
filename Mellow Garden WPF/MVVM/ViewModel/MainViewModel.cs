@@ -9,6 +9,10 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using System.Threading;
 using System.IO;
 using System.Windows.Threading;
+using System.Windows.Controls;
+using System.Runtime.CompilerServices;
+using System.Diagnostics;
+using System.Media;
 
 namespace Mellow_Garden_WPF.MVVM.ViewModel
 {
@@ -52,23 +56,33 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
         private int money = 0;
 
-        [ObservableProperty, NotifyPropertyChangedFor(nameof(HealthText))]
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(WaterText))]
         public double waterLevel = 100.99;
 
         public string WaterText => $"{Math.Floor(WaterLevel)}";
 
-        [ObservableProperty, NotifyPropertyChangedFor(nameof(HealthText))]
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(FertilizerText))]
         public double fertilizerLevel = 100.99;
 
-        public string FertilizeText => $"{Math.Floor(FertilizerLevel)}";
+        public string FertilizerText => $"{Math.Floor(FertilizerLevel)}";
 
         [ObservableProperty, NotifyPropertyChangedFor(nameof(HealthText))]
         public double healthLevel = 100.99;
 
         public string HealthText => $"{Math.Floor(HealthLevel)}";
 
-        [ObservableProperty, NotifyPropertyChangedFor(nameof(HealthText))]
+        [ObservableProperty, NotifyPropertyChangedFor(nameof(HappinessText))]
         public double happinessLevel = 0;
+
+        [ObservableProperty]
+        public string imageURI = "pack://application:,,,/Resources/Images/trees/state_1.png";
+
+        private string image1 = "pack://application:,,,/Resources/Images/trees/state_1.png";
+        private string image2 = "pack://application:,,,/Resources/Images/trees/state_2.png";
+        private string image3 = "pack://application:,,,/Resources/Images/trees/state_3.png";
+        private string image4 = "pack://application:,,,/Resources/Images/trees/state_4.png";
+        private string image5 = "pack://application:,,,/Resources/Images/trees/state_5.png";
+        private string image99 = "pack://application:,,,/Resources/Images/trees/state_91.png";
 
         public string HappinessText => $"{Math.Floor(HappinessLevel)}";
 
@@ -76,23 +90,25 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
         private int fertilizerUpgrade = 0;
         private int experienceUpgrade = 0;
 
-        private Thread timeThread;
-        private Thread calcThread;
+        private Thread TimerThread;
+        private Thread UIThread;
 
         static bool appRunning = true;
+        static bool paused = false;
 
         #endregion
 
 
         public MainViewModel()
         {
-            timeThread = new Thread(new ThreadStart(TimerThreadMethod));
-            timeThread.Start();
+            TimerThread = new Thread(new ThreadStart(TimerThreadMethod));
 
-            calcThread = new Thread(new ThreadStart(UIThreadMethod));
-            calcThread.Start();
+            UIThread = new Thread(new ThreadStart(UIThreadMethod));
+            UIThread.Start();
 
-            if (!File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "saveData.txt")))
+            string path = Path.Combine(CreateOrGetAppdataPath(), "saveData.txt");
+
+            if (!File.Exists(path))
             {
                 DeleteSave();
             } else
@@ -110,12 +126,15 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
         {
             while (appRunning)
             {
-                Thread.Sleep(1000);
-                gameTime += 1;
-                Simulate(1);
-                CalculateTreeState();
-                MainTimerSeconds = gameTime;
-                CheckForValueViolation();
+                if (!paused)
+                {
+                    gameTime += 1;
+                    Simulate(1);
+                    CalculateTreeState();
+                    MainTimerSeconds = gameTime;
+                    CheckForValueViolation();
+                    Thread.Sleep(1000);
+                }
             }
         }
         
@@ -131,15 +150,16 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
         private void UpdateExperienceBar()
         {
-            ExperienceBarValue = map(experience, 0, maxExperience, 0, 1);
+            ExperienceBarValue = map(experience, 0, maxExperience, 0, 100);
         }
 
-        public static void OnWindowClose()
+        public void OnWindowClose()
         {
+            SaveGame();
             appRunning = false;
         }
 
-        private void Simulate(int delta)
+        private void Simulate(long delta)
         {
             double moneyFactor = 1;
 
@@ -205,21 +225,17 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             int factor = 1;
             if (WaterLevel != 0 || HealthLevel != 0)
             {
-                if (gameTime <= 86400 * factor)
+                if (gameTime <= 172800 * factor)
                 {
                     newState = TreeStates.Seedling;
                 }
-                else if (gameTime < 172800 * factor && gameTime >= 0 * factor)
+                else if (gameTime < 604800 * factor && gameTime >= 172800 * factor)
                 {
                     newState = TreeStates.Sapling;
                 }
-                else if (gameTime < 604800 * factor && gameTime >= 172800 * factor)
-                {
-                    newState = TreeStates.YoungTree;
-                }
                 else if (gameTime < 1209600 * factor && gameTime >= 604800 * factor)
                 {
-                    newState = TreeStates.PreMatureTree;
+                    newState = TreeStates.YoungTree;
                 }
                 else if (gameTime < 2419200 * factor && gameTime >= 1209600 * factor)
                 {
@@ -235,6 +251,8 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
                 newState = TreeStates.Dead;
             }
 
+            SetTreeImage();
+
             if (newState != earlierState)
             {
                 //changePlayerSound(4)
@@ -243,26 +261,27 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             return newState;
         }
 
-        //TO-DO: Add Resource Loading and Images
         private void SetTreeImage()
         {
             switch (TreeState)
             {
                 case TreeStates.Seedling:
+                    ImageURI = image1;
                     break;
                 case TreeStates.Sapling:
+                    ImageURI = image2;
                     break;
                 case TreeStates.YoungTree:
-                    break;
-                case TreeStates.PreMatureTree:
+                    ImageURI = image3;
                     break;
                 case TreeStates.MatureTree:
+                    ImageURI = image4;
                     break;
                 case TreeStates.WiseTree:
+                    ImageURI = image5;
                     break;
                 case TreeStates.Dead:
-                    break; // Default to Seedling image
-                default:
+                    ImageURI = image99;
                     break;
             }
         }
@@ -314,9 +333,7 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
         private void CheckForValueViolation()
         {
             if (WaterLevel > 100.99) WaterLevel = 100.99;
-            if (WaterLevel > 0) WaterLevel = 0;
             if (FertilizerLevel > 100.99) FertilizerLevel = 100.99;
-            if (FertilizerLevel > 0) FertilizerLevel = 0;
             if (HealthLevel > 100.99) HealthLevel = 100.99;
 
             if ((System.DateTimeOffset.Now.ToUnixTimeSeconds() - gameTime) < 0)
@@ -379,12 +396,24 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
             SetNewMaximum();
             SaveGame();
+            if(!TimerThread.IsAlive)
+            {
+                TimerThread.Start();
+            }
+        }
+
+        private string CreateOrGetAppdataPath()
+        {
+            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Mellow Garden");
+            if (!File.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            return folderPath;
         }
 
         private void SaveGame()
         {
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "saveData.txt");
-
+            string path = Path.Combine(CreateOrGetAppdataPath(), "saveData.txt");
             saveTime = System.DateTimeOffset.Now.ToUnixTimeSeconds();
 
             string[] saveData =
@@ -410,7 +439,7 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
         private void LoadGame()
         {
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "saveData.txt");
+            string path = Path.Combine(CreateOrGetAppdataPath(), "saveData.txt");
 
             string[] saveData = File.ReadAllLines(path);
             WaterLevel = Convert.ToDouble(saveData[0]);
@@ -426,6 +455,11 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             leavesUpgrade = Convert.ToInt16(saveData[10]);
             fertilizerUpgrade = Convert.ToInt16(saveData[11]);
             experienceUpgrade = Convert.ToInt16(saveData[12]);
+
+            Simulate(System.DateTimeOffset.Now.ToUnixTimeSeconds() - saveTime);
+            gameTime += System.DateTimeOffset.Now.ToUnixTimeSeconds() - saveTime;
+
+            TimerThread.Start();
         }
 
         //TO-DO: Buy Upgrade Methods
@@ -446,7 +480,6 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
         Seedling,
         Sapling,
         YoungTree,
-        PreMatureTree,
         MatureTree,
         WiseTree,
         Dead
