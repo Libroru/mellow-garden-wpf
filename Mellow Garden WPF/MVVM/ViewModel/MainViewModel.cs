@@ -39,7 +39,7 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
         [ObservableProperty, NotifyPropertyChangedFor(nameof(TimerString))]
         public long mainTimerSeconds = 0;
-        public string TimerString => $"{MainTimerSeconds / 3600}h {(MainTimerSeconds % 3600) / 60}m {MainTimerSeconds % 60}s";
+        public string TimerString => $"{MainTimerSeconds / 86400}d {(MainTimerSeconds / 3600) % 24}h {(MainTimerSeconds % 3600) / 60}m {MainTimerSeconds % 60}s";
 
 
         [ObservableProperty]
@@ -52,9 +52,10 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
         public int xpFactor = 1;
 
         [ObservableProperty]
-        public double level = 0;
+        public double level = 1;
 
-        private int money = 0;
+        [ObservableProperty]
+        private int leaves = 0;
 
         [ObservableProperty, NotifyPropertyChangedFor(nameof(WaterText))]
         public double waterLevel = 100.99;
@@ -89,6 +90,12 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
         private int leavesUpgrade = 0;
         private int fertilizerUpgrade = 0;
         private int experienceUpgrade = 0;
+
+        [ObservableProperty]
+        public int leavesUpgradeCost = 2500;
+
+        [ObservableProperty]
+        public int fertilizerUpgradeCost = 2500;
 
         private Thread TimerThread;
         private Thread UIThread;
@@ -182,10 +189,10 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
                 if (FertilizerLevel != 0) FertilizerLevel -= 0.00065 * delta;
                 if (HealthLevel != 0) HealthLevel -= 0.00016 * delta;
 
-                IncrementExperience(0.0005 * delta);
+                IncrementExperience(0.005 * delta);
                 CalculateHappiness();
 
-                if (Math.Floor(0.35 * delta) > 0) money += Convert.ToInt32(Math.Floor(0.35 * delta * moneyFactor));
+                if (Math.Floor(0.35 * delta) > 0) Leaves += Convert.ToInt32(Math.Floor(0.35 * delta * moneyFactor));
             }
 
         }
@@ -203,7 +210,7 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
         private void SetNewMaximum()
         {
-            maxExperience = Math.Pow(Level - 1.0, 2) * 2.5 + 10;
+            maxExperience = Math.Pow(Level, 2) * 2.5 + 10;
         }
 
         private double CalculateHappiness()
@@ -390,6 +397,7 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             experience = 0;
             Level = 1;
             gameTime = 0;
+            Leaves = 0;
             leavesUpgrade = 0;
             fertilizerUpgrade = 0;
             experienceUpgrade = 0;
@@ -419,7 +427,7 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             string[] saveData =
             {
                 Convert.ToString(WaterLevel),
-                Convert.ToString(FertilizerLevel),
+                Convert.ToString(FertilizerLevel),  
                 Convert.ToString(HealthLevel),
                 Convert.ToString(TreeName),
                 Convert.ToString(Convert.ToInt32(TreeState)),
@@ -428,9 +436,11 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
                 Convert.ToString(Level),
                 Convert.ToString(gameTime),
                 Convert.ToString(saveTime),
+                Convert.ToString(Leaves),
                 Convert.ToString(leavesUpgrade),
                 Convert.ToString(fertilizerUpgrade),
-                Convert.ToString(experienceUpgrade),
+                Convert.ToString(LeavesUpgradeCost),
+                Convert.ToString(FertilizerUpgradeCost),
 
             };
 
@@ -452,9 +462,11 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             Level = Convert.ToDouble(saveData[7]);
             gameTime = Convert.ToInt64(saveData[8]);
             saveTime = Convert.ToInt64(saveData[9]);
-            leavesUpgrade = Convert.ToInt16(saveData[10]);
-            fertilizerUpgrade = Convert.ToInt16(saveData[11]);
-            experienceUpgrade = Convert.ToInt16(saveData[12]);
+            Leaves = Convert.ToInt32(saveData[10]);
+            leavesUpgrade = Convert.ToInt16(saveData[11]);
+            fertilizerUpgrade = Convert.ToInt16(saveData[12]);
+            LeavesUpgradeCost = Convert.ToInt32(saveData[13]);
+            FertilizerUpgradeCost = Convert.ToInt32(saveData[14]);
 
             Simulate(System.DateTimeOffset.Now.ToUnixTimeSeconds() - saveTime);
             gameTime += System.DateTimeOffset.Now.ToUnixTimeSeconds() - saveTime;
@@ -462,7 +474,66 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
             TimerThread.Start();
         }
 
-        //TO-DO: Buy Upgrade Methods
+        [RelayCommand]
+        public void BuyLeavesUpgrade()
+        {
+            if(Leaves >= LeavesUpgradeCost && leavesUpgrade < 5)
+            {
+                leavesUpgrade++;
+                Leaves -= LeavesUpgradeCost;
+                switch (leavesUpgrade)
+                {
+                    case 1:
+                        LeavesUpgradeCost = 25000;
+                        break;
+                    case 2:
+                        LeavesUpgradeCost = 32500;
+                        break;
+                    case 3:
+                        LeavesUpgradeCost = 50000;
+                        break;
+                    case 4:
+                        LeavesUpgradeCost = 75000;
+                        break;
+                    case 5:
+                        LeavesUpgradeCost = 100000;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            
+        }
+
+        [RelayCommand]
+        public void BuyFertilizerUpgrade()
+        {
+            if (Leaves >= FertilizerUpgradeCost && fertilizerUpgrade < 5)
+            {
+                fertilizerUpgrade++;
+                Leaves -= FertilizerUpgradeCost;
+                switch (fertilizerUpgrade)
+                {
+                    case 1:
+                        FertilizerUpgradeCost = 15000;
+                        break;
+                    case 2:
+                        FertilizerUpgradeCost = 30000;
+                        break;
+                    case 3:
+                        FertilizerUpgradeCost = 45000;
+                        break;
+                    case 4:
+                        FertilizerUpgradeCost = 75000;
+                        break;
+                    case 5:
+                        FertilizerUpgradeCost = 135000;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
     }
 
     public enum TreeEmotions

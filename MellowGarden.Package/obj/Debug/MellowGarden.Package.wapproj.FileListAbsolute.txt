@@ -1,0 +1,28 @@
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\Mellow Garden WPF\CommunityToolkit.Mvvm.dll
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\Mellow Garden WPF\Mellow Garden WPF.deps.json
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\Mellow Garden WPF\Mellow Garden WPF.exe
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\Mellow Garden WPF\Mellow Garden WPF.runtimeconfig.json
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\Mellow Garden WPF\Mellow Garden WPF.dll
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\Mellow Garden WPF\Mellow Garden WPF.pdb
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\resources.pri
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\AppxManifest.xml
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\MellowGarden.Package.build.appxrecipe
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\MellowGarden.Package.wapproj.AssemblyReference.cache
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\MellowGarden.Package.wapproj.CoreCompileInputs.cache
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\priconfig.xml
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\priconfig.xml.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\unfiltered.layout.resfiles
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\unfiltered.layout.resfiles.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\filtered.layout.resfiles
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\filtered.layout.resfiles.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\excluded.layout.resfiles
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\excluded.layout.resfiles.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\resources.resfiles
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\resources.resfiles.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\pri.resfiles
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\pri.resfiles.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\qualifiers.txt
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\qualifiers.txt.intermediate
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\ProjectArchitectures.txt
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\MellowGarden.Package.wapproj.LastBuild.txt
