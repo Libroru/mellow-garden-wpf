@@ -1,0 +1,58 @@
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LockScreenLogo.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-16.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-256.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-32.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-48.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-16.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-24.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-256.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-32.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-48.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-100.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-125.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-150.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-200.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-400.png
+D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\resources.pri
+C:\Users\alexk\.nuget\packages\communitytoolkit.mvvm\8.1.0\lib\net6.0\CommunityToolkit.Mvvm.dll
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.deps.json
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Debug\net7.0-windows\apphost.exe
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.runtimeconfig.json
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.dll
+D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.pdb

@@ -1,0 +1,6 @@
+D:\Documents\Mellow Garden WPF Builds\Mellow Garden WPF.exe
+D:\Documents\Mellow Garden WPF Builds\Mellow Garden WPF.dll
+D:\Documents\Mellow Garden WPF Builds\Mellow Garden WPF.deps.json
+D:\Documents\Mellow Garden WPF Builds\Mellow Garden WPF.runtimeconfig.json
+D:\Documents\Mellow Garden WPF Builds\Mellow Garden WPF.pdb
+D:\Documents\Mellow Garden WPF Builds\CommunityToolkit.Mvvm.dll

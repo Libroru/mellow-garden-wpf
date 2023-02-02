@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MellowGarden</id>
+    <version>0.1.0</version>
+    <authors>Libroru</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0-windows7.0">
+        <dependency id="CommunityToolkit.Mvvm" version="8.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net7.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.runtimeconfig.json" target="lib\net7.0-windows7.0\Mellow Garden WPF.runtimeconfig.json" />
+    <file src="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Release\net7.0-windows\Mellow Garden WPF.dll" target="lib\net7.0-windows7.0\Mellow Garden WPF.dll" />
+  </files>
+</package>

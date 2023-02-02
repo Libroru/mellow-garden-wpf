@@ -6,6 +6,10 @@
     <RootNamespace>Mellow_Garden_WPF</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <PackageId>MellowGarden</PackageId>
+    <Version>0.1</Version>
+    <Authors>Libroru</Authors>
+    <Product>Mellow Garden</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +23,13 @@
     <None Remove="Resources\Images\trees\state_93.png" />
     <None Remove="Resources\Images\trees\state_94.png" />
     <None Remove="Resources\Images\trees\state_95.png" />
+    <None Remove="Resources\Images\UI\exp.png" />
+    <None Remove="Resources\Images\UI\fertilizer.png" />
+    <None Remove="Resources\Images\UI\leave.png" />
+    <None Remove="Resources\Images\UI\scaled\exp.png" />
+    <None Remove="Resources\Images\UI\scaled\fertilizer.png" />
+    <None Remove="Resources\Images\UI\scaled\leave.png" />
+    <None Remove="Resources\Sounds\chime1.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +47,13 @@
     <Resource Include="Resources\Images\trees\state_93.png" />
     <Resource Include="Resources\Images\trees\state_94.png" />
     <Resource Include="Resources\Images\trees\state_95.png" />
+    <Resource Include="Resources\Images\UI\exp.png" />
+    <Resource Include="Resources\Images\UI\fertilizer.png" />
+    <Resource Include="Resources\Images\UI\leave.png" />
+    <Resource Include="Resources\Images\UI\scaled\exp.png" />
+    <Resource Include="Resources\Images\UI\scaled\fertilizer.png" />
+    <Resource Include="Resources\Images\UI\scaled\leave.png" />
+    <Resource Include="Resources\Sounds\chime1.wav" />
   </ItemGroup>
 
   <ItemGroup>

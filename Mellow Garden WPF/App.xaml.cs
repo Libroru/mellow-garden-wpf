@@ -13,9 +13,6 @@ namespace Mellow_Garden_WPF
     /// </summary>
     public partial class App : Application
     {
-        protected override void OnExit(ExitEventArgs e)
-        {
-            MVVM.ViewModel.MainViewModel.OnWindowClose();
-        }
+
     }
 }

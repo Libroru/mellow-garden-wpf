@@ -1,5 +1,5 @@
 ﻿Mellow Garden WPF
-1.0.0.0
+0.1.0.0
 
 winexe
 C#
@@ -16,5 +16,5 @@ D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\App.xaml
 199-1560276492
 MVVM\View\MainWindow.xaml;
 
-True
+False
 

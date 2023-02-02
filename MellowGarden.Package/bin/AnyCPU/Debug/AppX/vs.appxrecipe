@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ALEX-PC</Machine>
+    <WindowsUser>alexk</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>1510be26-d5cf-4af4-8fe7-fdde072a988c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Libroru</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>6F1AD5B309740E6EA8FACB81FBAA60916E7FB19C5881B917009140D7C07DF7A7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>1510be26-d5cf-4af4-8fe7-fdde072a988c_1.0.0.0_neutral__gk4xxfnxdvpd4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>1510be26-d5cf-4af4-8fe7-fdde072a988c_gk4xxfnxdvpd4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>1510be26-d5cf-4af4-8fe7-fdde072a988c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Libroru</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-02-02T16:48:25.158</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.902</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.684</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.696</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.143</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2023-01-20T14:27:53.038</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.721</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.762</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.082</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.087</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.078</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.064</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.993</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.003</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.016</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.026</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.055</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.034</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.358</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:15.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2023-01-28T16:14:14.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2023-01-31T19:32:29.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\alexk\.nuget\packages\communitytoolkit.mvvm\8.1.0\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>Mellow Garden WPF\CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2023-01-17T22:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.deps.json">
+      <PackagePath>Mellow Garden WPF\Mellow Garden WPF.deps.json</PackagePath>
+      <Modified>2023-02-02T16:48:23.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Debug\net7.0-windows\apphost.exe">
+      <PackagePath>Mellow Garden WPF\Mellow Garden WPF.exe</PackagePath>
+      <Modified>2023-02-02T16:48:23.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.runtimeconfig.json">
+      <PackagePath>Mellow Garden WPF\Mellow Garden WPF.runtimeconfig.json</PackagePath>
+      <Modified>2023-01-31T18:59:00.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.dll">
+      <PackagePath>Mellow Garden WPF\Mellow Garden WPF.dll</PackagePath>
+      <Modified>2023-02-02T16:48:23.794</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
