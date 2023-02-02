@@ -31,7 +31,7 @@
     <AppXManifest Include="D:\Coding\NET\Mellow Garden WPF\MellowGarden.Package\bin\AnyCPU\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-31T19:33:58.903</Modified>
+      <Modified>2023-02-02T16:48:25.158</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -299,11 +299,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.deps.json">
       <PackagePath>Mellow Garden WPF\Mellow Garden WPF.deps.json</PackagePath>
-      <Modified>2023-01-31T18:59:00.320</Modified>
+      <Modified>2023-02-02T16:48:23.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\obj\Debug\net7.0-windows\apphost.exe">
       <PackagePath>Mellow Garden WPF\Mellow Garden WPF.exe</PackagePath>
-      <Modified>2023-01-31T19:33:58.071</Modified>
+      <Modified>2023-02-02T16:48:23.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.runtimeconfig.json">
       <PackagePath>Mellow Garden WPF\Mellow Garden WPF.runtimeconfig.json</PackagePath>
@@ -311,7 +311,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Coding\NET\Mellow Garden WPF\Mellow Garden WPF\bin\Debug\net7.0-windows\Mellow Garden WPF.dll">
       <PackagePath>Mellow Garden WPF\Mellow Garden WPF.dll</PackagePath>
-      <Modified>2023-01-31T19:33:58.066</Modified>
+      <Modified>2023-02-02T16:48:23.794</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

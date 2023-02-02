@@ -199,7 +199,29 @@ namespace Mellow_Garden_WPF.MVVM.ViewModel
 
         private void IncrementExperience(double XP)
         {
-            experience += XP;
+            double multiplier = 1;
+
+            switch(fertilizerUpgrade)
+            {
+                case 1:
+                    multiplier = 1.25;
+                    break;
+                case 2:
+                    multiplier = 1.5;
+                    break;
+                case 3:
+                    multiplier = 1.75;
+                    break;
+                case 4:
+                    multiplier = 2;
+                    break;
+                case 5:
+                    multiplier = 2.25;
+                    break;
+            }
+
+            SetNewMaximum();
+            experience += XP * multiplier;
             if (experience >= maxExperience)
             {
                 Level += 1;

@@ -26,6 +26,9 @@
     <None Remove="Resources\Images\UI\exp.png" />
     <None Remove="Resources\Images\UI\fertilizer.png" />
     <None Remove="Resources\Images\UI\leave.png" />
+    <None Remove="Resources\Images\UI\scaled\exp.png" />
+    <None Remove="Resources\Images\UI\scaled\fertilizer.png" />
+    <None Remove="Resources\Images\UI\scaled\leave.png" />
     <None Remove="Resources\Sounds\chime1.wav" />
   </ItemGroup>
 
@@ -47,6 +50,9 @@
     <Resource Include="Resources\Images\UI\exp.png" />
     <Resource Include="Resources\Images\UI\fertilizer.png" />
     <Resource Include="Resources\Images\UI\leave.png" />
+    <Resource Include="Resources\Images\UI\scaled\exp.png" />
+    <Resource Include="Resources\Images\UI\scaled\fertilizer.png" />
+    <Resource Include="Resources\Images\UI\scaled\leave.png" />
     <Resource Include="Resources\Sounds\chime1.wav" />
   </ItemGroup>
 
